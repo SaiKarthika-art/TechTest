@@ -1,0 +1,23 @@
+I have implemented POM approach along with Cucumber BDD model
+
+I have created com.qa.pages package where in I created separate class for login page in the application.
+
+In login page I have created page elements and initialized it through PageFactory 
+initElements function and also I have defined the behavior in the page.
+
+I also have created com.qa.config package wherein i have a config file which is holding the
+datas such as application url, browser name and so on
+
+I have created a base class in util package where i am creating an object to load the
+configuration properties file inorder to fetch the data from it.
+
+Driver initialization function has also been included in Test Base class.
+
+Feature package is holding the feature where steps are described with Gherkin keywords.
+
+In stepDefinition package I created objects for the Login page class and I am using 
+those functions which are in page class with the help of objects.
+
+Also have created customExtentReport for reporting feature.
+
+Finally, in TestRunner package I specified all the cucumber options where we need to execute test case.
